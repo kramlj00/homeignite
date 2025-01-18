@@ -12,6 +12,7 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        blue500: "var(--blue500)",
       },
       backgroundImage: {
         "hero-background": "url('/images/hero-bg.png')",
