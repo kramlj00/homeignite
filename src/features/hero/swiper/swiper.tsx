@@ -5,6 +5,7 @@ import { useRef, useState } from "react";
 import "swiper/css";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper as ReactSwiper, SwiperClass, SwiperSlide } from "swiper/react";
+
 import { SWIPER_SLIDES } from "./swiper.const";
 import SwiperNavigation from "./swiper-navigation";
 
@@ -14,11 +15,10 @@ const Swiper = () => {
   const swiperRef = useRef<SwiperClass>(null);
 
   return (
-    <div className="mx-auto flex w-fit items-start gap-16">
+    <div className="flex w-full max-w-[250px] lg:max-w-[400px] gap-10 max-lg:flex-col lg:mt-0 lg:pr-10 m-auto">
       <SwiperNavigation activeIndex={activeIndex} />
-
-      <div className="mx-auto flex h-full max-h-[400px]">
-        <div className="flex items-center justify-center">
+      <div className="m-auto flex h-full max-h-[33rem] w-full p-[1.5px] lg:max-h-[33rem] lg:max-w-[800px] h-fit">
+        <div className="w-full lg:p-5">
           <ReactSwiper
             modules={[Autoplay, Navigation, Pagination]}
             onSwiper={(swiper) => {
@@ -49,14 +49,14 @@ const Swiper = () => {
               setActiveIndex(swiper.realIndex);
             }}
           >
-            {SWIPER_SLIDES.map((slide) => {
+            {SWIPER_SLIDES.map((slide, index) => {
               return (
-                <SwiperSlide key={slide.id}>
-                  <div className="flex flex-col h-full gap-4 m-auto">
-                    <h2 className="text-white text-[56px] font-bold max-w-[270px] leading-[60px]">
+                <SwiperSlide key={index}>
+                  <div className="flex flex-col gap-4 m-auto">
+                    <h2 className="text-white text-center lg:text-left text-3xl lg:text-[56px] font-bold max-w-[270px] lg:leading-[60px]">
                       {slide.title}
                     </h2>
-                    <p className="text-white text-sm max-w-[300px] text-[22px] leading-7">
+                    <p className="text-white text-center lg:text-left text-sm max-w-[300px] lg:text-[22px] lg:leading-7">
                       {slide.subtitle}
                     </p>
                   </div>
