@@ -12,3 +12,11 @@ export const navigationLinks = [
     href: "/pricing",
   },
 ];
+
+export const mainNavigationMobileLinks = [
+  ...navigationLinks,
+  {
+    label: "Request a quote",
+    href: "/request-a-quote",
+  },
+];

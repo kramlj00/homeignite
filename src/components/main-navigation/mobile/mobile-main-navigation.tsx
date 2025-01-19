@@ -1,7 +1,7 @@
 import { useState } from "react";
 import MenuLines from "./menu-lines";
 import { twMerge } from "tailwind-merge";
-import { navigationLinks } from "../main-navigation.const";
+import { mainNavigationMobileLinks } from "../main-navigation.const";
 import Image from "next/image";
 import LogoIconMobile from "@/assets/icons/logo-mobile.svg";
 
@@ -27,7 +27,7 @@ const MobileMainNavigation = ({ active, setActive }: IProps) => {
         )}
       >
         <ul className="list-none flex justify-end items-center mt-10 flex-1 flex-col gap-4">
-          {navigationLinks.map((link) => (
+          {mainNavigationMobileLinks.map((link) => (
             <li
               key={link.href}
               className={twMerge(

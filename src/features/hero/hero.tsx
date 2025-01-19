@@ -3,6 +3,7 @@ import RectangleImage1 from "@/assets/images/rectangle-image-1.png";
 import RectangleImage2 from "@/assets/images/rectangle-image-2.png";
 import HeroImage from "@/assets/images/hero-image.png";
 import RectangleCard from "@/components/card/rectangle-card";
+import HeroActions from "./hero-actions";
 
 const Hero = () => {
   return (
@@ -18,7 +19,7 @@ const Hero = () => {
         </RectangleCard>
       </div>
 
-      <div className="absolute top-[55%] right-[20px]">
+      <div className="absolute top-96 right-[20px]">
         <RectangleCard className="z-50">
           <div className="flex flex-col gap-1">
             <Image src={RectangleImage2} alt="Hero" />
@@ -29,13 +30,15 @@ const Hero = () => {
         </RectangleCard>
       </div>
 
-      <div className="absolute bottom-0 right-[60px]">
+      <div className="absolute top-32 right-[60px]">
         <div className="relative bg-white/5 px-28 pt-4">
           <div className="relative [mask-image:linear-gradient(to_bottom,white_50%,transparent_100%)]">
             <Image src={HeroImage} alt="Hero" />
           </div>
         </div>
       </div>
+
+      <HeroActions />
     </div>
   );
 };
