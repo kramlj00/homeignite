@@ -9,12 +9,12 @@ interface IProps {
 
 const SwiperNavigation = ({ activeIndex, swiperRef }: IProps) => {
   return (
-    <div className="hidden lg:flex flex-col gap-2 mt-6">
+    <div className="flex lg:flex-col gap-2 mt-6 m-auto lg:m-0">
       {Array.from({ length: SWIPER_SLIDES.length }, (_, index) => (
         <button
           key={index}
           className={twMerge(
-            "h-16 w-1",
+            "h-2 lg:h-16 w-2 lg:w-1 rounded-full lg:rounded-none",
             index === activeIndex ? "bg-orange500" : "bg-white"
           )}
           onClick={() => {
