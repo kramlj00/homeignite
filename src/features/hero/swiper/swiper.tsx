@@ -16,7 +16,7 @@ const Swiper = () => {
 
   return (
     <div className="flex w-full max-w-[250px] lg:max-w-[400px] gap-10 max-lg:flex-col lg:mt-0 lg:pr-10 m-auto">
-      <SwiperNavigation activeIndex={activeIndex} />
+      <SwiperNavigation activeIndex={activeIndex} swiperRef={swiperRef} />
       <div className="m-auto flex h-full max-h-[33rem] w-full p-[1.5px] lg:max-h-[33rem] lg:max-w-[800px] h-fit">
         <div className="w-full lg:p-5">
           <ReactSwiper
