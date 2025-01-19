@@ -4,11 +4,15 @@ import RectangleImage2 from "@/assets/images/rectangle-image-2.png";
 import HeroImage from "@/assets/images/hero-image.png";
 import RectangleCard from "@/components/card/rectangle-card";
 import HeroActions from "./hero-actions";
+import Swiper from "./swiper";
 
 const Hero = () => {
   return (
-    <div className="relative bg-black min-h-screen bg-hero-background bg-cover bg-center w-full">
-      <div className="relative h-screen">
+    <div className="relative flex bg-black min-h-screen bg-hero-background bg-cover bg-center w-full">
+      <div className="w-fit h-screen flex items-center justify-center pl-20">
+        <Swiper />
+      </div>
+      <div className="relative h-screen w-full">
         <div className="absolute top-56 left-4 md:left-auto md:top-auto md:bottom-80 md:right-[500px]">
           <RectangleCard className="z-50 m-auto sm:w-full w-32">
             <div className="flex flex-col gap-1">
