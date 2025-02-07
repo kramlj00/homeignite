@@ -9,7 +9,7 @@ interface IProps {
 
 const SwiperNavigation = ({ activeIndex, swiperRef }: IProps) => {
   return (
-    <div className="flex lg:flex-col gap-2 mt-6 m-auto lg:m-0">
+    <div className="flex lg:flex-col gap-2 m-auto lg:mt-6 lg:m-0">
       {Array.from({ length: SWIPER_SLIDES.length }, (_, index) => (
         <button
           key={index}
