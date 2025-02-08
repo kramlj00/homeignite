@@ -11,9 +11,10 @@ import { StaticImageData } from "next/image";
 
 interface SliderProps {
   images: StaticImageData[];
+  children?: React.ReactNode;
 }
 
-const Slider = ({ images }: SliderProps) => {
+const Slider = ({ images, children }: SliderProps) => {
   const middleIndex = Math.floor(images.length / 2);
 
   return (
@@ -63,7 +64,7 @@ const Slider = ({ images }: SliderProps) => {
         {images.map((image, index) => (
           <SwiperSlide
             key={index}
-            className="bg-center bg-cover flex items-center justify-center mb-10"
+            className="bg-center bg-cover flex items-center justify-center"
           >
             <Image
               src={image}
@@ -74,7 +75,9 @@ const Slider = ({ images }: SliderProps) => {
           </SwiperSlide>
         ))}
 
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 flex items-center gap-6 z-10">
+        {children}
+
+        <div className="flex items-center justify-center gap-6 z-10 mt-10">
           <button className="swiper-button-prev !static !w-4 !h-4 !text-gray-400 !m-0 after:content-['←'] after:!text-lg">
             <span className="sr-only">Previous slide</span>
           </button>

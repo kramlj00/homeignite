@@ -11,8 +11,18 @@ const images = [home1, home2, home3, home4, home5];
 
 const ElevateYourHome = () => {
   return (
-    <div className="w-full py-12 px-4">
-      <Slider images={images} />
+    <div className="w-full pt-24 p-12 px-4">
+      <h1 className="text-center text-4xl font-medium mb-2">
+        Elevate Your Home
+      </h1>
+      <p className="text-center text-md mb-10">
+        Discover premium services that transform your living space into
+        something <br />
+        extraordinary
+      </p>
+      <Slider images={images}>
+        <p className="text-center text-xl font-medium">Blind Boutique</p>
+      </Slider>
     </div>
   );
 };
