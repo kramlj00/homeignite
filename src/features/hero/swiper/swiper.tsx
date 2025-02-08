@@ -29,7 +29,6 @@ const Swiper = () => {
             centeredSlides
             autoplay={{ delay: 4000, disableOnInteraction: false }}
             speed={1500}
-            // loop
             breakpoints={{
               1024: {
                 height: undefined,

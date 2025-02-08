@@ -20,7 +20,17 @@ const Slider = ({ images }: SliderProps) => {
       grabCursor={true}
       centeredSlides={true}
       initialSlide={middleIndex}
-      slidesPerView={2}
+      breakpoints={{
+        480: {
+          slidesPerView: 1.4,
+        },
+        768: {
+          slidesPerView: 1.6,
+        },
+        1024: {
+          slidesPerView: 2,
+        },
+      }}
       loop={true}
       coverflowEffect={{
         rotate: 5,

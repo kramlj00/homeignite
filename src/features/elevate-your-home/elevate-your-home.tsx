@@ -11,7 +11,7 @@ const images = [home1, home2, home3, home4, home5];
 
 const ElevateYourHome = () => {
   return (
-    <div className="w-full py-12">
+    <div className="w-full py-12 px-4">
       <Slider images={images} />
     </div>
   );
