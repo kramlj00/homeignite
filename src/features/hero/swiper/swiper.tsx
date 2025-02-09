@@ -24,6 +24,7 @@ const Swiper = () => {
             onSwiper={(swiper) => {
               swiperRef.current = swiper;
             }}
+            loop={true}
             className="h-full"
             slidesPerView={1}
             centeredSlides
