@@ -1,13 +1,15 @@
 import Image from "next/image";
 import { BLINDS } from "./blinds.const";
+import { BUTTON_VARIANT } from "@/components/button/button-variants.const";
+import Button from "@/components/button";
 
 const Blinds = () => {
   return (
-    <div className="px-6 md:px-20 w-full py-12 px-4">
-      <h1 className="text-4xl font-medium">Blind Boutique</h1>
-      <p className="text-xl mb-10">
-        Discover the Perfect Blinds for Every Space
-      </p>
+    <div className="px-6 md:px-20 w-full py-12 px-4 flex flex-col gap-10">
+      <div>
+        <h1 className="text-4xl font-medium">Blind Boutique</h1>
+        <p className="text-xl">Discover the Perfect Blinds for Every Space</p>
+      </div>
       <div className="flex overflow-scroll gap-4">
         {BLINDS.map((blind) => (
           <div
@@ -29,6 +31,12 @@ const Blinds = () => {
           </div>
         ))}
       </div>
+      <div className="flex justify-center">
+        <Button variant={BUTTON_VARIANT.PRIMARY}>Contact us</Button>
+      </div>
+      <p className="text-6xl text-center">
+        Your Vision, Our Craft” Custom <br /> Designing
+      </p>
     </div>
   );
 };
