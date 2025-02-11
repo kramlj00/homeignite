@@ -13,6 +13,7 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         blue500: "var(--blue500)",
+        orange400: "var(--orange400)",
         orange500: "var(--orange500)",
         orange900: "var(--orange900)",
       },
