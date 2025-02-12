@@ -4,7 +4,7 @@ import { SwiperClass } from "swiper/react";
 
 interface IProps {
   activeIndex: number;
-  swiperRef: React.MutableRefObject<SwiperClass | null>;
+  swiperRef: React.RefObject<SwiperClass | null>;
 }
 
 const SwiperNavigation = ({ activeIndex, swiperRef }: IProps) => {
@@ -17,10 +17,10 @@ const SwiperNavigation = ({ activeIndex, swiperRef }: IProps) => {
             "h-2 lg:h-16 w-2 lg:w-1 rounded-full lg:rounded-none",
             index === activeIndex ? "bg-orange500" : "bg-white"
           )}
-          onClick={() => {
+          onClick={() =>
             index !== activeIndex &&
-              swiperRef.current?.slideToLoop(index, 1000, false);
-          }}
+            swiperRef.current?.slideToLoop(index, 1000, false)
+          }
         />
       ))}
     </div>
