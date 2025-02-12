@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { SERVICES } from "./services.const";
 import { twMerge } from "tailwind-merge";
+import ServicesMobile from "./services-mobile";
 
 const Services = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -16,7 +17,8 @@ const Services = () => {
         </span>
       </h1>
       <div className="w-full max-w-[1700px] mx-auto">
-        <div className="flex items-center justify-center w-full h-[540px] gap-2">
+        <ServicesMobile />
+        <div className="md:flex items-center justify-center w-full h-[540px] gap-2 hidden">
           {SERVICES.map((service, index) => (
             <div
               key={service.id}
