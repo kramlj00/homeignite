@@ -25,9 +25,12 @@ const RenovationTimelineMobile = ({
             isFirst ? "h-1/2 bottom-0" : isLast ? "h-1/2 top-0" : "h-full"
           )}
         />
-        <div className="w-12 h-12 rounded bg-[#E97451] flex items-center justify-center text-white relative z-10">
+        <RectangleCard
+          className="w-10 h-10 rounded bg-[#E97451] flex items-center justify-center text-white relative z-10"
+          clipPath="polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px)"
+        >
           {icon}
-        </div>
+        </RectangleCard>
       </div>
       <RectangleCard className="bg-gray-50 text-gray-900 w-full max-w-[314px] my-4">
         <div className="p-5">
