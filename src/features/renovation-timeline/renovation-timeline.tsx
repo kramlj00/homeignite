@@ -1,6 +1,8 @@
 import RenovationTimelineStep from "./renovation-timeline-step";
 import { RENOVATION_TIMELINE_STEPS } from "./renovation-timeline.const";
 import RenovationTimelineMobile from "./renovation-timeline-mobile";
+import { BUTTON_VARIANT } from "@/components/button/button-variants.const";
+import Button from "@/components/button/button";
 
 const RenovationTimeline = () => {
   return (
@@ -26,6 +28,9 @@ const RenovationTimeline = () => {
           />
         </div>
       ))}
+      <div className="my-24 w-full flex justify-center">
+        <Button variant={BUTTON_VARIANT.PRIMARY}>Book free consultation</Button>
+      </div>
     </div>
   );
 };

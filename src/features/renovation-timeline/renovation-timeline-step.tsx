@@ -40,7 +40,7 @@ const RenovationTimelineStep = ({
               )}
             />
             <RectangleCard
-              className="w-16 h-16 rounded bg-[#E97451] flex items-center justify-center text-white relative z-10"
+              className="w-16 h-16 rounded bg-orange500 flex items-center justify-center text-white relative z-10"
               clipPath="polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px)"
             >
               {icon}
@@ -60,7 +60,7 @@ const RenovationTimelineStep = ({
               )}
             />
             <RectangleCard
-              className="w-16 h-16 rounded bg-[#E97451] flex items-center justify-center text-white relative z-10"
+              className="w-16 h-16 rounded bg-orange500 flex items-center justify-center text-white relative z-10"
               clipPath="polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px)"
             >
               {icon}
