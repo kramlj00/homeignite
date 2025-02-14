@@ -28,7 +28,7 @@ const RenovationTimelineMobile = ({
           )}
         />
         <RectangleCard
-          className="w-10 h-10 rounded bg-orange500 flex items-center justify-center text-white relative z-10"
+          className="w-12 h-12 bg-orange500 flex items-center justify-center text-white relative z-10"
           clipPath="polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px)"
         >
           {icon}
