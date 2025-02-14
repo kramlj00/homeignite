@@ -23,7 +23,7 @@ const RenovationTimelineStep = ({
     <div className="hidden sm:grid grid-cols-[1fr_4rem_1fr] mx-auto max-w-[710px] gap-4">
       {position === RenovationTimelineStepPosition.LEFT ? (
         <>
-          <RectangleCard className="bg-gray-50 text-gray-900 w-full max-w-[314px] my-12">
+          <RectangleCard className="bg-zinc-100 text-gray-900 w-full max-w-[314px] my-12">
             <div className="p-5">
               <h3 className="font-bold text-xl mb-2">{title}</h3>
               <p className="text-muted-foreground font-normal normal-case">
@@ -35,7 +35,7 @@ const RenovationTimelineStep = ({
             <AnimationOnScroll
               classNameInView="bg-orange500 animate-line-grow"
               className={twMerge(
-                "w-0.5 bg-gray-200 absolute",
+                "w-0.5 bg-zinc-200 absolute",
                 isFirst ? "h-1/2 bottom-0" : isLast ? "h-1/2 top-0" : "h-full"
               )}
             />
@@ -55,7 +55,7 @@ const RenovationTimelineStep = ({
             <AnimationOnScroll
               classNameInView="bg-orange500 animate-line-grow"
               className={twMerge(
-                "w-0.5 bg-gray-200 absolute",
+                "w-0.5 bg-zinc-100 absolute",
                 isFirst ? "h-1/2 bottom-0" : isLast ? "h-1/2 top-0" : "h-full"
               )}
             />
@@ -66,7 +66,7 @@ const RenovationTimelineStep = ({
               {icon}
             </RectangleCard>
           </div>
-          <RectangleCard className="bg-gray-50 text-gray-900 w-full max-w-[314px]">
+          <RectangleCard className="bg-zinc-100 text-gray-900 w-full max-w-[314px]">
             <div className="p-5">
               <h3 className="font-bold text-xl mb-2">{title}</h3>
               <p className="text-muted-foreground font-normal normal-case">
