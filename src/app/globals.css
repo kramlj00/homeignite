@@ -10,6 +10,10 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+  .animate-line-grow {
+    animation: line-grow 1s ease-out forwards;
+  }
 }
 
 @layer base {
@@ -20,5 +24,14 @@ body {
     --orange400: #f8931f;
     --orange500: #f07c4b;
     --orange900: #b9623d;
+  }
+}
+
+@keyframes line-grow {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
   }
 }

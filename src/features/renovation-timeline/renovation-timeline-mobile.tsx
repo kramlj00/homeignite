@@ -1,3 +1,4 @@
+import AnimationOnScroll from "@/components/animation/AnimationOnScroll";
 import RectangleCard from "@/components/card/rectangle-card";
 import { twMerge } from "tailwind-merge";
 
@@ -19,7 +20,8 @@ const RenovationTimelineMobile = ({
   return (
     <div className="sm:hidden grid grid-cols-[4rem_1fr] mx-auto max-w-[710px] gap-4">
       <div className="flex justify-center items-center h-full relative">
-        <div
+        <AnimationOnScroll
+          classNameInView="bg-orange500 animate-line-grow"
           className={twMerge(
             "w-0.5 bg-gray-200 absolute",
             isFirst ? "h-1/2 bottom-0" : isLast ? "h-1/2 top-0" : "h-full"

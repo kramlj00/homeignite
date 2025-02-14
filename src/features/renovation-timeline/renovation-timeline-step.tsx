@@ -1,6 +1,7 @@
 import RectangleCard from "@/components/card/rectangle-card";
 import { RenovationTimelineStepPosition } from "./renovation-timeline.const";
 import { twMerge } from "tailwind-merge";
+import AnimationOnScroll from "@/components/animation/AnimationOnScroll";
 interface IProps {
   title: string;
   description: string;
@@ -31,7 +32,8 @@ const RenovationTimelineStep = ({
             </div>
           </RectangleCard>
           <div className="flex justify-center items-center h-full relative">
-            <div
+            <AnimationOnScroll
+              classNameInView="bg-orange500 animate-line-grow"
               className={twMerge(
                 "w-0.5 bg-gray-200 absolute",
                 isFirst ? "h-1/2 bottom-0" : isLast ? "h-1/2 top-0" : "h-full"
@@ -50,7 +52,8 @@ const RenovationTimelineStep = ({
         <>
           <div></div>
           <div className="flex justify-center items-center h-full relative">
-            <div
+            <AnimationOnScroll
+              classNameInView="bg-orange500 animate-line-grow"
               className={twMerge(
                 "w-0.5 bg-gray-200 absolute",
                 isFirst ? "h-1/2 bottom-0" : isLast ? "h-1/2 top-0" : "h-full"
