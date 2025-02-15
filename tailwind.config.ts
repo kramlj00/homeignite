@@ -20,6 +20,9 @@ export default {
       backgroundImage: {
         "hero-background": "url('/images/hero-bg.png')",
       },
+      animation: {
+        "line-grow": "line-grow 1s ease-out forwards",
+      },
     },
   },
   plugins: [],

@@ -3,9 +3,10 @@ import { twMerge } from "tailwind-merge";
 interface IProps {
   children: React.ReactNode;
   className?: string;
+  clipPath?: string;
 }
 
-const RectangleCard = ({ children, className }: IProps) => {
+const RectangleCard = ({ children, className, clipPath }: IProps) => {
   return (
     <div
       className={twMerge(
@@ -14,6 +15,7 @@ const RectangleCard = ({ children, className }: IProps) => {
       )}
       style={{
         clipPath:
+          clipPath ||
           "polygon(20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 20px)",
       }}
     >

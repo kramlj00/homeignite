@@ -3,6 +3,7 @@ import ElevateYourHome from "@/features/elevate-your-home";
 import Blinds from "@/features/blinds";
 import Services from "@/features/services";
 import ProjectsShowcase from "@/features/projects-showcase";
+import RenovationTimeline from "@/features/renovation-timeline/renovation-timeline";
 
 const HomePage = () => {
   return (
@@ -12,6 +13,7 @@ const HomePage = () => {
       <Blinds />
       <Services />
       <ProjectsShowcase />
+      <RenovationTimeline />
     </>
   );
 };

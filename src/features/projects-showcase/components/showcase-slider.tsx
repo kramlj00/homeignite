@@ -61,7 +61,7 @@ const ShowcaseSlider = () => {
                   className="w-full max-w-[280px] mx-auto md:hidden"
                   onClick={() => handleToggle(project.id, !isAfter)}
                 >
-                  {isAfter ? "After" : "Before"}
+                  {!isAfter ? "After" : "Before"}
                 </Button>
               </div>
             </SwiperSlide>
