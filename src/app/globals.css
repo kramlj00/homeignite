@@ -21,8 +21,10 @@ body {
     --background: #ffffff;
     --foreground: #171717;
     --blue500: #2b6777;
+    --blue900: #1a6d7f;
     --orange400: #f8931f;
     --orange500: #f07c4b;
+    --orange800: #c96a4f;
     --orange900: #b9623d;
   }
 }
