@@ -9,9 +9,7 @@ const OurTeam = () => {
       <div className="text-center space-y-8 mb-16">
         <div className="flex items-center justify-center gap-2 text-blue500 font-gotham-medium">
           <Home className="h-5 w-5" />
-          <span className="text-sm font-medium uppercase tracking-wide">
-            Meet Our Team
-          </span>
+          <span className="text-sm uppercase tracking-wide">Meet Our Team</span>
         </div>
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl flex flex-col gap-2">
           <span>Get to Know Our Team of</span>
