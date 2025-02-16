@@ -28,6 +28,8 @@ body {
     --orange900: #b9623d;
     --font-gotham: var(--font-gotham);
     --font-gotham-bold: var(--font-gotham-bold);
+    --font-gotham-medium: var(--font-gotham-medium);
+    --font-gotham-light: var(--font-gotham-light);
   }
 }
 
@@ -42,4 +44,12 @@ body {
 
 .font-gotham-bold {
   font-family: var(--font-gotham-bold);
+}
+
+.font-gotham-medium {
+  font-family: var(--font-gotham-medium);
+}
+
+.font-gotham-light {
+  font-family: var(--font-gotham-light);
 }

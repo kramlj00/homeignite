@@ -23,6 +23,12 @@ const gothamMedium = localFont({
   weight: "500",
 });
 
+const gothamLight = localFont({
+  src: "./fonts/gotham-light.woff",
+  variable: "--font-gotham-light",
+  weight: "300",
+});
+
 export const metadata = metadataConfig;
 
 export default function RootLayout({
@@ -33,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${gotham.variable} ${gothamBold.variable} ${gothamMedium.variable} antialiased relative`}
+        className={`${gotham.variable} ${gothamBold.variable} ${gothamMedium.variable} ${gothamLight.variable} antialiased relative`}
       >
         <MainNavigation />
         {children}

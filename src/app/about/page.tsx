@@ -4,6 +4,7 @@ import { ResolvingMetadata } from "next";
 import { getMetadataTitle } from "@/lib/metadata/metadata-utils";
 import { openGraphImage } from "@/lib/metadata/open-graph-image";
 import { ABOUT_ROUTE } from "@/constants";
+import AboutUs from "@/features/about-us";
 
 export async function generateMetadata(
   _arg: Record<string, never>,
@@ -23,7 +24,9 @@ export async function generateMetadata(
 
 const AboutPage = () => {
   return (
-    <div className="flex flex-col items-center justify-center h-screen"></div>
+    <div className="flex flex-col items-center justify-center h-screen">
+      <AboutUs />
+    </div>
   );
 };
 
