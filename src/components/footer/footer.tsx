@@ -23,7 +23,7 @@ const Footer = () => {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className="hover:opacity-80 uppercase font-bold"
+                  className="hover:opacity-80 uppercase font-gotham-bold"
                 >
                   {link.label}
                 </Link>
@@ -34,7 +34,7 @@ const Footer = () => {
 
         <div className="flex flex-col md:flex-row gap-12 md:gap-0 justify-between items-center">
           <div className="space-y-4">
-            <h3 className="font-bold uppercase md:normal-case text-xl md:text-md tracking-wider md:tracking-normal">
+            <h3 className="font-gotham-bold uppercase md:normal-case text-xl md:text-md tracking-wider md:tracking-normal">
               Connect with us
             </h3>
             <div className="flex gap-4 justify-center md:justify-start">

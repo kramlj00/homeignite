@@ -53,7 +53,7 @@ const Swiper = () => {
               return (
                 <SwiperSlide key={index}>
                   <div className="flex flex-col gap-4 m-auto">
-                    <h2 className="text-white text-center lg:text-left text-3xl lg:text-[56px] font-bold max-w-[270px] lg:leading-[60px]">
+                    <h2 className="text-white text-center lg:text-left text-3xl lg:text-[56px] max-w-[270px] lg:leading-[60px]">
                       {slide.title}
                     </h2>
                     <p className="text-white text-center lg:text-left text-sm max-w-[300px] lg:text-[22px] lg:leading-7">

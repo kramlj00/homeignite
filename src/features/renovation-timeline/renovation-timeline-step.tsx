@@ -25,7 +25,7 @@ const RenovationTimelineStep = ({
         <>
           <RectangleCard className="bg-zinc-100 text-gray-900 w-full max-w-[314px] my-12">
             <div className="p-5">
-              <h3 className="font-bold text-xl mb-2">{title}</h3>
+              <h3 className="font-gotham-bold text-xl mb-2">{title}</h3>
               <p className="text-muted-foreground font-normal normal-case">
                 {description}
               </p>
@@ -68,7 +68,9 @@ const RenovationTimelineStep = ({
           </div>
           <RectangleCard className="bg-zinc-100 text-gray-900 w-full max-w-[314px]">
             <div className="p-5">
-              <h3 className="font-bold text-xl mb-2">{title}</h3>
+              <h3 className="!text-black font-gotham-bold text-xl mb-2">
+                {title}
+              </h3>
               <p className="text-muted-foreground font-normal normal-case">
                 {description}
               </p>
