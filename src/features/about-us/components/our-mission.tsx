@@ -5,7 +5,7 @@ import BuildingHouse from "@/assets/images/building.png";
 
 const OurMission = () => {
   return (
-    <section className="container mx-auto px-4 pt-4 relative min-h-screen">
+    <section className="container mx-auto px-4 pt-4 relative">
       <div className="grid gap-8 lg:grid-cols-2 lg:flex-row-reverse">
         <div className="order-2 lg:order-1 space-y-6 md:w-[486px] mx-auto">
           <div className="relative rounded-lg overflow-hidden h-[364px] m-auto">
