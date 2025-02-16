@@ -6,8 +6,8 @@ import BuildingHouse from "@/assets/images/building.png";
 const OurMission = () => {
   return (
     <section className="container mx-auto px-4 pt-4 relative min-h-screen">
-      <div className="grid gap-8 lg:grid-cols-2">
-        <div className="space-y-6 w-[486px] mx-auto">
+      <div className="grid gap-8 lg:grid-cols-2 lg:flex-row-reverse">
+        <div className="order-2 lg:order-1 space-y-6 md:w-[486px] mx-auto">
           <div className="relative rounded-lg overflow-hidden h-[364px] m-auto">
             <Image
               src={BuildingHouse}
@@ -34,7 +34,7 @@ const OurMission = () => {
           </div>
         </div>
 
-        <div className="space-y-6">
+        <div className="order-1 lg:order-2 space-y-6">
           <div className="space-y-2">
             <div className="flex items-center gap-2 text-blue500 font-gotham-medium">
               <Home className="h-5 w-5" />
