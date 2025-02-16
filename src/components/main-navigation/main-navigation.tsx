@@ -39,7 +39,7 @@ const MainNavigation = () => {
               key={link.href}
               href={link.href}
               className={twMerge(
-                "text-white uppercase",
+                "text-white uppercase font-gotham-medium",
                 active === link.label && "text-zinc-400"
               )}
               onClick={() => setActive(link.label)}

@@ -31,7 +31,7 @@ const MobileMainNavigation = ({ active, setActive }: IProps) => {
             <li
               key={link.href}
               className={twMerge(
-                "cursor-pointer font-medium",
+                "cursor-pointer font-gotham-bold",
                 active === link.label ? "text-zinc-400" : "text-white"
               )}
               onClick={() => {

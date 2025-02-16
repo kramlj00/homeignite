@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-gotham);
 }
 
 @layer utilities {
@@ -26,6 +26,8 @@ body {
     --orange500: #f07c4b;
     --orange800: #c96a4f;
     --orange900: #b9623d;
+    --font-gotham: var(--font-gotham);
+    --font-gotham-bold: var(--font-gotham-bold);
   }
 }
 
@@ -36,4 +38,8 @@ body {
   100% {
     transform: scaleY(1);
   }
+}
+
+.font-gotham-bold {
+  font-family: var(--font-gotham-bold);
 }
