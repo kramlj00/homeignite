@@ -7,13 +7,12 @@ import { BUTTON_VARIANT } from "@/components/button/button-variants.const";
 export const AboutUsHeader = () => {
   return (
     <section className="relative min-h-screen">
-      <div className="absolute inset-0 w-full">
+      <div className="absolute inset-0 w-full h-[96vh]">
         <Image
           src={ModernHomeImage}
           alt="Modern interior living space with wooden furniture and minimalist design"
           fill
           priority
-          quality={100}
           className="object-cover w-full"
         />
         <div className="absolute inset-0 bg-black/60" />

@@ -23,11 +23,7 @@ export async function generateMetadata(
 }
 
 const AboutPage = () => {
-  return (
-    <div className="flex flex-col items-center justify-center h-screen">
-      <AboutUs />
-    </div>
-  );
+  return <AboutUs />;
 };
 
 export default AboutPage;
