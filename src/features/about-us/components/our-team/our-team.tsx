@@ -11,7 +11,7 @@ const OurTeam = () => {
           <Home className="h-5 w-5" />
           <span className="text-sm uppercase tracking-wide">Meet Our Team</span>
         </div>
-        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl flex flex-col gap-2">
+        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-6xl flex flex-col gap-2">
           <span>Get to Know Our Team of</span>
           <span>Home Building Experts</span>
         </h2>
