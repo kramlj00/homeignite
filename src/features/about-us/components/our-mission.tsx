@@ -41,7 +41,7 @@ const OurMission = () => {
               <span className="text-sm uppercase tracking-wide">About Us</span>
             </div>
             <h1 className="text-4xl tracking-wider lg:text-5xl w-[300px] !leading-[60px]">
-              Reigniting Homes, Revitalizing Lives"
+              Reigniting Homes, Revitalizing Lives
             </h1>
             <h2 className="text-2xl text-muted-foreground">
               Turning Houses into Heartfelt Homes for Every Family

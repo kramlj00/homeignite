@@ -24,8 +24,8 @@ export const Experience = () => {
               At HomeIgnite, we take pride in our deep industry knowledge and
               extensive experience, honed over years of transforming homes. Our
               team is dedicated to delivering superior craftsmanship, blending
-              innovation with precision. Here's a closer look at the areas where
-              we excel
+              innovation with precision. Here&apos;s a closer look at the areas
+              where we excel
             </p>
           </div>
 
@@ -60,7 +60,9 @@ export const Experience = () => {
             <div className="absolute inset-0 bg-black/20" />
             <div className="absolute top-8 left-8 text-white">
               <div className="text-5xl font-gotham-medium mb-2">50,000 +</div>
-              <div className="text-xl font-gotham-medium">Satisfied Clients</div>
+              <div className="text-xl font-gotham-medium">
+                Satisfied Clients
+              </div>
             </div>
           </div>
         </div>
