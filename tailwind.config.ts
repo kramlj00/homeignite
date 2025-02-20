@@ -18,6 +18,7 @@ export default {
         orange500: "var(--orange500)",
         orange800: "var(--orange800)",
         orange900: "var(--orange900)",
+        gray400: "var(--gray400)",
       },
       backgroundImage: {
         "hero-background": "url('/images/hero-bg.png')",

@@ -26,8 +26,11 @@ body {
     --orange500: #f07c4b;
     --orange800: #c96a4f;
     --orange900: #b9623d;
+    --gray400: #a6afb5;
     --font-gotham: var(--font-gotham);
     --font-gotham-bold: var(--font-gotham-bold);
+    --font-gotham-medium: var(--font-gotham-medium);
+    --font-gotham-light: var(--font-gotham-light);
   }
 }
 
@@ -42,4 +45,12 @@ body {
 
 .font-gotham-bold {
   font-family: var(--font-gotham-bold);
+}
+
+.font-gotham-medium {
+  font-family: var(--font-gotham-medium);
+}
+
+.font-gotham-light {
+  font-family: var(--font-gotham-light);
 }
