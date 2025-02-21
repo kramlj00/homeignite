@@ -12,7 +12,7 @@ const PricingPlans = () => {
     <div className="min-h-screen p-4 lg:p-8">
       <div className="mx-auto max-w-6xl">
         <div className="relative mt-24">
-          <div className="absolute inset-x-0 -top-8 bottom-0 bg-white/50 backdrop-blur-md rounded-3xl" />
+          <div className="hidden lg:block absolute inset-x-0 -top-8 bottom-0 bg-white/50 backdrop-blur-md rounded-3xl" />
           <div className="relative grid gap-6 lg:grid-cols-3 px-4">
             {PRICING_PLANS.map((plan) => (
               <div
@@ -20,8 +20,8 @@ const PricingPlans = () => {
                 className={twMerge(
                   "rounded-3xl p-8",
                   plan.mostPopular
-                    ? "lg:-translate-y-16 bg-orange500 text-white shadow-lg"
-                    : "text-black"
+                    ? "lg:-translate-y-16 bg-orange500 text-white shadow-lg order-first lg:order-none"
+                    : "text-black lg:bg-transparent bg-white/50 backdrop-blur-md lg:backdrop-blur-none"
                 )}
               >
                 {plan.mostPopular && (
