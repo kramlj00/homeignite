@@ -10,6 +10,7 @@ import SinkImage from "@/assets/images/sink.png";
 import Image from "next/image";
 import "swiper/css";
 import "swiper/css/mousewheel";
+import type { Swiper as SwiperType } from "swiper";
 
 const ServicesFAQs = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -48,13 +49,20 @@ const ServicesFAQs = () => {
               key={index}
               className={twMerge(activeIndex === index && "!h-[290px]")}
             >
-              <div
+              <button
                 className={twMerge(
-                  "w-[580px] transition-all duration-500 rounded-lg p-8",
+                  "w-[580px] transition-all duration-500 rounded-lg p-8 text-left",
                   activeIndex === index
-                    ? "bg-green800 h-[270px]"
+                    ? "bg-green800 h-[270px] cursor-default"
                     : "bg-blue1000 h-fit"
                 )}
+                onClick={(e) => {
+                  e.preventDefault();
+                  const swiperElement = e.currentTarget.closest(
+                    ".swiper"
+                  ) as HTMLElement & { swiper: SwiperType };
+                  swiperElement?.swiper?.slideTo(index);
+                }}
               >
                 <p className="text-2xl text-white">{faq.question}</p>
                 {activeIndex === index && (
@@ -62,7 +70,7 @@ const ServicesFAQs = () => {
                     {faq.answer}
                   </p>
                 )}
-              </div>
+              </button>
             </SwiperSlide>
           ))}
         </Swiper>
