@@ -29,9 +29,13 @@ const ServicesFAQs = () => {
           <span>About Our Services and Solutions</span>
         </h2>
       </div>
-      <div className="flex gap-14">
-        <div className="relative w-[500px] h-[320px] overflow-hidden rounded-lg">
-          <Image src={SinkImage} alt="Sink" className="w-full h-full" />
+      <div className="flex flex-wrap gap-6 md:gap-14 w-full justify-center">
+        <div className="relative max-w-[520px] w-full h-[320px] overflow-hidden rounded-lg">
+          <Image
+            src={SinkImage}
+            alt="Sink"
+            className="w-full h-full object-cover"
+          />
         </div>
         <Swiper
           direction="vertical"
@@ -73,6 +77,11 @@ const ServicesFAQs = () => {
               </button>
             </SwiperSlide>
           ))}
+          {activeIndex === 3 && (
+            <SwiperSlide>
+              <div className="bg-transparent text-base md:text-lg" />
+            </SwiperSlide>
+          )}
         </Swiper>
       </div>
     </section>
