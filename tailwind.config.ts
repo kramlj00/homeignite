@@ -14,11 +14,13 @@ export default {
         foreground: "var(--foreground)",
         blue500: "var(--blue500)",
         blue900: "var(--blue900)",
+        blue1000: "var(--blue1000)",
         orange400: "var(--orange400)",
         orange500: "var(--orange500)",
         orange800: "var(--orange800)",
         orange900: "var(--orange900)",
         gray400: "var(--gray400)",
+        green800: "var(--green800)",
       },
       backgroundImage: {
         "hero-background": "url('/images/hero-bg.png')",
