@@ -1,3 +1,5 @@
+import { ABOUT_ROUTE, PRICING_ROUTE } from "@/constants";
+
 export const navigationLinks = [
   {
     label: "Home",
@@ -5,11 +7,11 @@ export const navigationLinks = [
   },
   {
     label: "Who we are",
-    href: "/about",
+    href: ABOUT_ROUTE,
   },
   {
     label: "Pricing",
-    href: "/pricing",
+    href: PRICING_ROUTE,
   },
 ];
 
