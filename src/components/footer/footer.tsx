@@ -11,7 +11,7 @@ import { navigationLinks } from "../main-navigation/main-navigation.const";
 
 const Footer = () => {
   return (
-    <footer className="bg-blue900 text-white py-8 px-6">
+    <footer className="bg-blue900 text-white py-8 px-6 relative">
       <div className="container mx-auto">
         <div className="flex md:flex-row flex-col justify-between gap-12 md:items-center mb-12">
           <Link href="/" className="flex md:items-center gap-2">

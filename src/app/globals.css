@@ -22,12 +22,17 @@ body {
     --foreground: #171717;
     --blue500: #2b6777;
     --blue900: #1a6d7f;
+    --blue1000: #171f24;
     --orange400: #f8931f;
     --orange500: #f07c4b;
     --orange800: #c96a4f;
     --orange900: #b9623d;
+    --green800: #1c6d7f;
+    --gray400: #a6afb5;
     --font-gotham: var(--font-gotham);
     --font-gotham-bold: var(--font-gotham-bold);
+    --font-gotham-medium: var(--font-gotham-medium);
+    --font-gotham-light: var(--font-gotham-light);
   }
 }
 
@@ -42,4 +47,12 @@ body {
 
 .font-gotham-bold {
   font-family: var(--font-gotham-bold);
+}
+
+.font-gotham-medium {
+  font-family: var(--font-gotham-medium);
+}
+
+.font-gotham-light {
+  font-family: var(--font-gotham-light);
 }
