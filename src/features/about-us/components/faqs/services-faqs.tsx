@@ -4,6 +4,7 @@ import Image from "next/image";
 import "swiper/css";
 import "swiper/css/mousewheel";
 import FaqsSwiper from "./faqs-swiper";
+import ServicesFaqsMobile from "./services-faqs-mobile";
 
 const ServicesFAQs = () => {
   return (
@@ -20,8 +21,8 @@ const ServicesFAQs = () => {
           <span>About Our Services and Solutions</span>
         </h2>
       </div>
-      <div className="flex flex-wrap gap-6 md:gap-14 w-full justify-center">
-        <div className="relative max-w-[520px] w-full h-[320px] overflow-hidden rounded-lg">
+      <div className="grid grid-cols-1 xl:grid-cols-5 gap-6 xl:gap-14">
+        <div className="relative xl:col-span-2 h-[320px] overflow-hidden rounded-lg">
           <Image
             src={SinkImage}
             alt="Sink"
@@ -29,6 +30,7 @@ const ServicesFAQs = () => {
           />
         </div>
         <FaqsSwiper />
+        <ServicesFaqsMobile />
       </div>
     </section>
   );
