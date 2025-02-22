@@ -12,6 +12,7 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        blue50: "var(--blue50)",
         blue100: "var(--blue100)",
         blue500: "var(--blue500)",
         blue900: "var(--blue900)",
@@ -28,6 +29,18 @@ export default {
       },
       animation: {
         "line-grow": "line-grow 1s ease-out forwards",
+        "accordion-down-slow": "accordion-down-slow 0.2s ease-out",
+        "accordion-up-slow": "accordion-up-slow 0.2s ease-out",
+      },
+      keyframes: {
+        "accordion-down-slow": {
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
+        },
+        "accordion-up-slow": {
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
       },
     },
   },
