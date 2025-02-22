@@ -1,8 +1,6 @@
-import { BUTTON_VARIANT } from "@/components/button/button-variants.const";
-
-import Button from "@/components/button";
 import Link from "next/link";
 import { CONTACT_SALES_ROUTE, PRICING_ROUTE } from "@/constants";
+import ContactUsButton from "@/components/button/contact-us-button";
 
 const HeroActions = () => {
   return (
@@ -13,7 +11,7 @@ const HeroActions = () => {
       >
         See pricing
       </Link>
-      <Button variant={BUTTON_VARIANT.PRIMARY}>Contact us</Button>
+      <ContactUsButton />
       <Link
         href={CONTACT_SALES_ROUTE}
         className="sm:block hidden text-white text-xs sm:text-sm font-gotham-bold uppercase cursor-pointer"

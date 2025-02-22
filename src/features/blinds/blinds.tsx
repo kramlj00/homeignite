@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { BLINDS } from "./blinds.const";
-import { BUTTON_VARIANT } from "@/components/button/button-variants.const";
-import Button from "@/components/button";
+import ContactUsButton from "@/components/button/contact-us-button";
 
 const Blinds = () => {
   return (
@@ -32,7 +31,7 @@ const Blinds = () => {
         ))}
       </div>
       <div className="flex justify-center">
-        <Button variant={BUTTON_VARIANT.PRIMARY}>Contact us</Button>
+        <ContactUsButton />
       </div>
       <p className="text-5xl md:text-6xl text-center">
         Your Vision, Our Craft” Custom <br /> Designing
