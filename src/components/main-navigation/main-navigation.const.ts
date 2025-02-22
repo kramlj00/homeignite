@@ -1,4 +1,4 @@
-import { ABOUT_ROUTE, PRICING_ROUTE } from "@/constants";
+import { ABOUT_ROUTE, CONTACT_SALES_ROUTE, PRICING_ROUTE } from "@/constants";
 
 export const navigationLinks = [
   {
@@ -19,6 +19,6 @@ export const mainNavigationMobileLinks = [
   ...navigationLinks,
   {
     label: "Request a quote",
-    href: "/request-a-quote",
+    href: CONTACT_SALES_ROUTE,
   },
 ];
