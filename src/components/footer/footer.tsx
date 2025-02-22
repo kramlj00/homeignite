@@ -2,12 +2,11 @@
 
 import Link from "next/link";
 import { Facebook, Instagram } from "lucide-react";
-import Button from "../button";
-import { BUTTON_VARIANT } from "../button/button-variants.const";
-import { BUTTON_SIZE } from "../button/button-size";
 import Image from "next/image";
 import LogoIcon from "@/assets/icons/logo.svg";
 import { navigationLinks } from "../main-navigation/main-navigation.const";
+import ContactUsButton from "../button/contact-us-button";
+import { BUTTON_SIZE } from "../button/button-size";
 
 const Footer = () => {
   return (
@@ -66,9 +65,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <Button variant={BUTTON_VARIANT.PRIMARY} size={BUTTON_SIZE.SMALL}>
-            Contact us
-          </Button>
+          <ContactUsButton size={BUTTON_SIZE.SMALL} />
         </div>
       </div>
     </footer>

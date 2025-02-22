@@ -29,7 +29,7 @@ const Hero = () => {
             <RectangleCard className="z-50 m-auto sm:w-full w-32">
               <div className="flex flex-col gap-1">
                 <Image src={RectangleImage1} alt="Hero" />
-                <p className="hidden md:block text-sm font-semibold text-blue500 uppercase">
+                <p className="hidden md:block text-sm text-blue500 uppercase">
                   Kitchen renovation
                 </p>
               </div>
@@ -40,7 +40,7 @@ const Hero = () => {
             <RectangleCard className="z-50 sm:w-full w-32">
               <div className="flex flex-col gap-1">
                 <Image src={RectangleImage2} alt="Hero" />
-                <p className="hidden md:block text-sm font-semibold text-blue500 uppercase">
+                <p className="hidden md:block text-sm text-blue500 uppercase">
                   Full house renovation
                 </p>
               </div>

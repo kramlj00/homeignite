@@ -8,10 +8,12 @@ import MobileMainNavigation from "./mobile/mobile-main-navigation";
 import { useEffect } from "react";
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
+import { usePathname } from "next/navigation";
 
 const MainNavigation = () => {
   const [active, setActive] = useState("");
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,6 +26,10 @@ const MainNavigation = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    setActive(pathname);
+  }, [pathname]);
+
   return (
     <nav
       className={twMerge(
@@ -32,7 +38,9 @@ const MainNavigation = () => {
       )}
     >
       <div className="hidden sm:flex items-center gap-4 justify-between w-full">
-        <Image src={LogoIcon} alt="Logo" />
+        <Link href="/">
+          <Image src={LogoIcon} alt="Logo" />
+        </Link>
         <div className="flex items-center gap-10 lg:gap-24">
           {navigationLinks.map((link) => (
             <Link
@@ -40,9 +48,9 @@ const MainNavigation = () => {
               href={link.href}
               className={twMerge(
                 "text-white uppercase font-gotham-medium",
-                active === link.label && "text-zinc-400"
+                active === link.href && "font-gotham-bold underline"
               )}
-              onClick={() => setActive(link.label)}
+              onClick={() => setActive(link.href)}
             >
               {link.label}
             </Link>

@@ -10,7 +10,7 @@ const Services = () => {
 
   return (
     <div className="px-6 md:px-20 w-full py-16 px-4 flex flex-col gap-16">
-      <h1 className="text-6xl font-light">
+      <h1 className="text-5xl md:text-6xl font-light">
         Beyond Homes:{" "}
         <span className="text-orange400">
           Designing <br /> Everything
