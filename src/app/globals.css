@@ -20,6 +20,7 @@ body {
   :root {
     --background: #ffffff;
     --foreground: #171717;
+    --blue50: #e1f2ed;
     --blue100: #69b1d7;
     --blue500: #2b6777;
     --blue900: #1a6d7f;
