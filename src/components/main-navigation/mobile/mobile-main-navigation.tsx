@@ -35,14 +35,14 @@ const MobileMainNavigation = ({ active, setActive }: IProps) => {
               key={link.href}
               className={twMerge(
                 "cursor-pointer font-gotham-bold",
-                active === link.label ? "text-zinc-400" : "text-white"
+                active === link.href ? "text-zinc-200" : "text-white"
               )}
               onClick={() => {
                 setToggle(!toggle);
-                setActive(link.label);
+                setActive(link.href);
               }}
             >
-              <a href={`#${link.href}`}>{link.label}</a>
+              <Link href={link.href}>{link.label}</Link>
             </li>
           ))}
         </ul>
