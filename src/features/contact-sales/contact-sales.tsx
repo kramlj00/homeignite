@@ -1,5 +1,6 @@
 import Image from "next/image";
 import PricingHeaderImage from "@/assets/images/pricing-header.png";
+import PlansAndPricing from "./components/plans-and-pricing";
 
 const ContactSales = () => {
   return (
@@ -13,6 +14,7 @@ const ContactSales = () => {
           className="object-cover w-full"
         />
       </div>
+      <PlansAndPricing />
     </section>
   );
 };
