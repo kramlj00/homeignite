@@ -6,8 +6,12 @@ import { BUTTON_VARIANT } from "@/components/button/button-variants.const";
 import { twMerge } from "tailwind-merge";
 import CheckIcon from "@/assets/icons/check-icon.svg";
 import Image from "next/image";
+import { CONTACT_SALES_ROUTE } from "@/constants";
+import { useRouter } from "next/navigation";
 
 const PricingPlans = () => {
+  const router = useRouter();
+
   return (
     <div className="min-h-screen p-4 lg:p-8">
       <div className="mx-auto max-w-6xl">
@@ -76,6 +80,7 @@ const PricingPlans = () => {
                       ? "bg-black hover:bg-gray-800"
                       : "bg-blue100 hover:bg-blue100"
                   )}
+                  onClick={() => router.push(CONTACT_SALES_ROUTE)}
                 >
                   Contact Sales
                 </Button>

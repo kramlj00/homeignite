@@ -1,6 +1,7 @@
 import Image from "next/image";
 import PricingHeaderImage from "@/assets/images/pricing-header.png";
 import PricingPlans from "./pricing-plans";
+
 const PricingHeader = () => {
   return (
     <section className="relative min-h-screen">
