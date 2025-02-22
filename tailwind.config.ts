@@ -24,9 +24,6 @@ export default {
         gray400: "var(--gray400)",
         green800: "var(--green800)",
       },
-      backgroundImage: {
-        "hero-background": "url('/images/hero-bg.png')",
-      },
       animation: {
         "line-grow": "line-grow 1s ease-out forwards",
         "accordion-down-slow": "accordion-down-slow 0.2s ease-out",
