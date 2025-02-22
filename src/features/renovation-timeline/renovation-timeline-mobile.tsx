@@ -18,7 +18,7 @@ const RenovationTimelineMobile = ({
   isLast,
 }: IProps) => {
   return (
-    <div className="sm:hidden grid grid-cols-[4rem_1fr] mx-auto max-w-[710px] gap-4">
+    <div className="sm:hidden grid grid-cols-[4rem_1fr] mx-auto max-w-[710px]">
       <div className="flex justify-center items-center h-full relative">
         <AnimationOnScroll
           classNameInView="bg-orange500 animate-line-grow"

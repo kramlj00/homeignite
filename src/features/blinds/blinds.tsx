@@ -34,7 +34,7 @@ const Blinds = () => {
       <div className="flex justify-center">
         <Button variant={BUTTON_VARIANT.PRIMARY}>Contact us</Button>
       </div>
-      <p className="text-6xl text-center">
+      <p className="text-5xl md:text-6xl text-center">
         Your Vision, Our Craft” Custom <br /> Designing
       </p>
     </div>
