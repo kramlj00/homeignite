@@ -1,3 +1,4 @@
+import Link from "next/link";
 import PickAMeetupForm from "./pick-a-meetup-form";
 import { Phone } from "lucide-react";
 
@@ -38,6 +39,18 @@ const PlansAndPricing = () => {
 
         <div className="backdrop-blur-2xl rounded-3xl px-4 py-8 sm:p-10">
           <PickAMeetupForm />
+          <p className="text-sm text-black mt-4">
+            By Submitting This Form, You Agree To Permit{" "}
+            <span className="text-blue900">Homeignite</span> To Contact You Via
+            Phone, Email, Or Text Message, Which May Be Automated, Regarding{" "}
+            <span className="text-blue900">Homeignite</span> Products And Other
+            Promotions And Have Read And Acknowledge Our{" "}
+            <Link href="#" className="underline">
+              Privacy Policy
+            </Link>
+            . Consent Is Not A Condition Of Any Purchase And May Be Revoked At
+            Any Time.
+          </p>
         </div>
       </div>
     </div>
