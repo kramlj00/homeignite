@@ -5,10 +5,20 @@ import HeroImage from "@/assets/images/hero-image.png";
 import RectangleCard from "@/components/card/rectangle-card";
 import HeroActions from "./hero-actions";
 import Swiper from "./swiper";
+import HeroBackgroundImage from "@/assets/images/hero-bg.png";
 
 const Hero = () => {
   return (
-    <div className="relative bg-black min-h-screen bg-hero-background bg-cover bg-center">
+    <div className="relative min-h-screen bg-black">
+      <div className="absolute inset-0 w-full">
+        <Image
+          src={HeroBackgroundImage}
+          alt="Modern interior living space with wooden furniture and minimalist design"
+          fill
+          priority
+          className="object-cover w-full"
+        />
+      </div>
       <div className="flex w-full justify-between gap-4 lg:flex-row flex-col-reverse">
         <div className="lg:mb-0 mb-16 relative m-auto flex h-full max-w-[1700px] flex-col justify-between p-4 pb-20 lg:h-[700px] lg:flex-row lg:items-center lg:gap-10 lg:p-0 lg:py-[12.5px] lg:pl-[90px]">
           <Swiper />
