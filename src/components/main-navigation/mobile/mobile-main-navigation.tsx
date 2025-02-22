@@ -4,6 +4,7 @@ import { twMerge } from "tailwind-merge";
 import { mainNavigationMobileLinks } from "../main-navigation.const";
 import Image from "next/image";
 import LogoIconMobile from "@/assets/icons/logo-mobile.svg";
+import Link from "next/link";
 
 interface IProps {
   active: string;
@@ -15,7 +16,9 @@ const MobileMainNavigation = ({ active, setActive }: IProps) => {
 
   return (
     <div className="sm:hidden flex w-full justify-between items-center">
-      <Image src={LogoIconMobile} alt="Logo" />
+      <Link href="/">
+        <Image src={LogoIconMobile} alt="Logo" />
+      </Link>
       <MenuLines toggle={toggle} setToggle={setToggle} />
 
       <div

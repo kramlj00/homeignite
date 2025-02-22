@@ -32,7 +32,9 @@ const MainNavigation = () => {
       )}
     >
       <div className="hidden sm:flex items-center gap-4 justify-between w-full">
-        <Image src={LogoIcon} alt="Logo" />
+        <Link href="/">
+          <Image src={LogoIcon} alt="Logo" />
+        </Link>
         <div className="flex items-center gap-10 lg:gap-24">
           {navigationLinks.map((link) => (
             <Link
