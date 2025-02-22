@@ -23,7 +23,7 @@ const MobileMainNavigation = ({ active, setActive }: IProps) => {
 
       <div
         className={twMerge(
-          "p-6 w-full backdrop-blur-sm absolute top-0 right-0 min-w-[140px] z-0 rounded-bl-md rounded-br-md transition-transform duration-300",
+          "p-6 w-full backdrop-blur-lg absolute top-0 right-0 min-w-[140px] z-0 rounded-bl-md rounded-br-md transition-transform duration-300",
           !toggle
             ? "transform -translate-y-full"
             : "flex transform translate-y-0"
@@ -34,8 +34,8 @@ const MobileMainNavigation = ({ active, setActive }: IProps) => {
             <li
               key={link.href}
               className={twMerge(
-                "cursor-pointer font-gotham-bold",
-                active === link.href ? "text-zinc-200" : "text-white"
+                "cursor-pointer font-gotham-medium text-white uppercase",
+                active === link.href && "font-gotham-bold underline"
               )}
               onClick={() => {
                 setToggle(!toggle);
