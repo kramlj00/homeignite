@@ -21,7 +21,7 @@ const ElevateYourHome = () => {
         extraordinary
       </p>
       <Slider images={images}>
-        <p className="text-center text-xl font-medium">Blind Boutique</p>
+        <p className="text-center text-xl font-medium mt-10">Blind Boutique</p>
       </Slider>
     </div>
   );

@@ -22,6 +22,6 @@ export const SERVICES = [
   {
     id: 5,
     title: "Office Renovations",
-    image: "/images/services/office.jpeg",
+    image: "/images/services/office.png",
   },
 ];
