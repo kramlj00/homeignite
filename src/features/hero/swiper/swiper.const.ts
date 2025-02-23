@@ -6,13 +6,13 @@ export const SWIPER_SLIDES = [
   },
   {
     id: 2,
-    title: "Crafting Warmth and Memories 2",
+    title: "Designing Comfort, Creating Memories",
     subtitle:
-      "Remodeling Consultants to deliver fantastic home renovations to homeowners across the US",
+      "Transforming Spaces into Cozy and Cherished Homes for Every Family",
   },
   {
     id: 3,
-    title: "Crafting Warmth and Memories 3",
-    subtitle: "Turning Houses into Heartfelt Homes for Every family 3",
+    title: "Bringing Homes to Life with Warmth and Love",
+    subtitle: "Thoughtfully Curated Spaces That Reflect Your Heart and Style",
   },
 ];
