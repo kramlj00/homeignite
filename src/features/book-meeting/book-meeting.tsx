@@ -1,3 +1,4 @@
+import DatePicker from "@/components/date-picker";
 import { Phone } from "lucide-react";
 
 import { Clock } from "lucide-react";
@@ -45,7 +46,10 @@ const BookMeeting = () => {
           </div>
         </div>
 
-        <div></div>
+        <div className="p-8 space-y-8">
+          <h2 className="text-lg font-gotham-bold">Select a Date & Time</h2>
+          <DatePicker />
+        </div>
       </div>
     </section>
   );
