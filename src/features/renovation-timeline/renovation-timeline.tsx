@@ -7,7 +7,7 @@ import Button from "@/components/button/button";
 const RenovationTimeline = () => {
   return (
     <div className="max-w-5xl mx-auto px-4 py-12 relative">
-      <h1 className="text-6xl font-light text-center">
+      <h1 className="text-5xl md:text-6xl font-light text-center">
         Why choose Homeignite?
       </h1>
       <p className="text-center text-muted-foreground my-12 max-w-[470px] mx-auto">
