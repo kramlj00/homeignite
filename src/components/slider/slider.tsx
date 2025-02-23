@@ -8,6 +8,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import Image from "next/image";
 import { StaticImageData } from "next/image";
+import SliderPaginationBullets from "./slider-pagination-bullets";
 
 interface SliderProps {
   images: StaticImageData[];
@@ -77,39 +78,8 @@ const Slider = ({ images, children }: SliderProps) => {
 
         {children}
 
-        <div className="flex items-center justify-center gap-6 z-10 mt-10">
-          <button className="swiper-button-prev !static !w-4 !h-4 !text-gray-400 !m-0 after:content-['←'] after:!text-lg">
-            <span className="sr-only">Previous slide</span>
-          </button>
-
-          <div className="swiper-pagination !static !w-auto flex gap-3"></div>
-
-          <button className="swiper-button-next !static !w-4 !h-4 !text-gray-400 !m-0 after:content-['→'] after:!text-lg">
-            <span className="sr-only">Next slide</span>
-          </button>
-        </div>
+        <SliderPaginationBullets />
       </Swiper>
-
-      <style jsx global>{`
-        .swiper-pagination-bullet {
-          width: 6px;
-          height: 6px;
-          background: #d1d5db;
-          opacity: 1;
-          margin: 0 !important;
-          cursor: pointer;
-          padding: 0;
-          border: none;
-        }
-        .swiper-pagination-bullet-active {
-          background: #6366f1;
-          opacity: 1;
-        }
-        .swiper-button-prev:after,
-        .swiper-button-next:after {
-          font-weight: normal;
-        }
-      `}</style>
     </div>
   );
 };

@@ -21,9 +21,7 @@ const Swiper = () => {
         <div className="w-full lg:p-5">
           <ReactSwiper
             modules={[Autoplay, Navigation, Pagination]}
-            onSwiper={(swiper) => {
-              swiperRef.current = swiper;
-            }}
+            onSwiper={(swiper) => (swiperRef.current = swiper)}
             loop={true}
             className="h-full"
             slidesPerView={1}
@@ -45,9 +43,7 @@ const Swiper = () => {
               prevEl: "#swiper-button-prev",
             }}
             initialSlide={0}
-            onActiveIndexChange={(swiper) => {
-              setActiveIndex(swiper.realIndex);
-            }}
+            onActiveIndexChange={(swiper) => setActiveIndex(swiper.realIndex)}
           >
             {SWIPER_SLIDES.map((slide, index) => {
               return (
