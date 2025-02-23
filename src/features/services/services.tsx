@@ -34,14 +34,16 @@ const Services = () => {
               onMouseEnter={() => setActiveIndex(index)}
               onMouseLeave={() => setActiveIndex(null)}
             >
-              <div className="absolute inset-0 hover:bg-black/30 transition-all duration-500 ease-in-out" />
+              <div className="absolute inset-0 bg-black/20 hover:bg-black/0 transition-all duration-500 ease-in-out" />
               <div
                 className={twMerge(
                   "absolute left-6 right-6",
                   activeIndex === index ? "top-6 text-xl" : "bottom-6 text-md"
                 )}
               >
-                <h3 className="text-white font-semibold">{service.title}</h3>
+                <h3 className="text-white font-gotham-medium">
+                  {service.title}
+                </h3>
               </div>
             </div>
           ))}
