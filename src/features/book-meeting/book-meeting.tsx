@@ -1,9 +1,14 @@
+"use client";
+
 import DatePicker from "@/components/date-picker";
 import { Phone } from "lucide-react";
 
 import { Clock } from "lucide-react";
+import { useState } from "react";
 
 const BookMeeting = () => {
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
   return (
     <section className="max-w-5xl mx-auto px-4 py-12 relative">
       <div className="space-y-8 mb-16">
@@ -46,10 +51,21 @@ const BookMeeting = () => {
           </div>
         </div>
 
-        <div className="p-8 space-y-8">
-          <h2 className="text-lg font-gotham-bold">Select a Date & Time</h2>
-          <DatePicker />
-        </div>
+        {!isSubmitted ? (
+          <div className="p-8 space-y-8">
+            <h2 className="text-lg font-gotham-bold">Select a Date & Time</h2>
+            <DatePicker onSubmit={() => setIsSubmitted(true)} />
+          </div>
+        ) : (
+          <div className="p-8 space-y-8">
+            <h2 className="text-2xl font-gotham-bold">
+              Thank you for scheduling a meeting with us!
+            </h2>
+            <p className="text-gray-500">
+              We will get back to you as soon as possible.
+            </p>
+          </div>
+        )}
       </div>
     </section>
   );

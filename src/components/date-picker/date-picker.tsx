@@ -26,7 +26,7 @@ interface TimeSlot {
   formatted: string;
 }
 
-const DatePicker = () => {
+const DatePicker = ({ onSubmit }: { onSubmit: () => void }) => {
   const [currentMonth, setCurrentMonth] = useState(new Date());
   const [selectedDate, setSelectedDate] = useState<Date | string>("");
   const [selectedTime, setSelectedTime] = useState<TimeSlot | null>(null);
@@ -98,7 +98,6 @@ const DatePicker = () => {
           <ChevronRight className="w-5 h-5" />
         </button>
       </div>
-
       <div className="grid grid-cols-7 gap-1 mb-2">
         {weekDays.map((day) => (
           <div
@@ -182,6 +181,8 @@ const DatePicker = () => {
         variant={BUTTON_VARIANT.ROUNDED}
         className="text-md normal-case font-gotham-medium"
         size={BUTTON_SIZE.SMALL}
+        disabled={!selectedDate || !selectedTime}
+        onClick={onSubmit}
       >
         Schedule Meeting
       </Button>
