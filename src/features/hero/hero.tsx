@@ -1,18 +1,16 @@
 import Image from "next/image";
 import RectangleImage1 from "@/assets/images/rectangle-image-1.png";
 import RectangleImage2 from "@/assets/images/rectangle-image-2.png";
-import HeroImage from "@/assets/images/hero-image.png";
 import RectangleCard from "@/components/card/rectangle-card";
 import HeroActions from "./hero-actions";
 import Swiper from "./swiper";
-import HeroBackgroundImage from "@/assets/images/hero-bg.png";
 
 const Hero = () => {
   return (
     <div className="relative min-h-screen bg-black">
       <div className="absolute inset-0 w-full">
         <Image
-          src={HeroBackgroundImage}
+          src="/images/hero-bg.png"
           alt="Modern interior living space with wooden furniture and minimalist design"
           fill
           priority
@@ -25,7 +23,7 @@ const Hero = () => {
         </div>
 
         <div className="relative lg:h-screen w-full">
-          <div className="absolute top-56 left-4 lg:left-auto lg:top-auto lg:bottom-80 lg:right-[500px]">
+          <div className="absolute top-56 left-4 lg:left-auto lg:top-auto lg:bottom-[40vh] lg:right-[35vw]">
             <RectangleCard className="z-50 m-auto sm:w-full w-32">
               <div className="flex flex-col gap-1">
                 <Image src={RectangleImage1} alt="Hero" />
@@ -51,9 +49,11 @@ const Hero = () => {
             <div className="relative px-28 pt-4 bg-gradient-to-b from-white/5 to-transparent">
               <div className="relative [mask-image:linear-gradient(to_bottom,white_50%,transparent_100%)]">
                 <Image
-                  src={HeroImage}
+                  src="/images/hero-image.png"
                   alt="Hero"
-                  className="h-[calc(100vh-140px)] object-cover"
+                  width={600}
+                  height={900}
+                  className="h-[calc(100vh-140px)] w-auto object-cover"
                 />
               </div>
             </div>
@@ -63,9 +63,11 @@ const Hero = () => {
             <div className="relative px-10 pt-4 bg-gradient-to-b from-white/5 to-transparent m-auto">
               <div className="relative [mask-image:linear-gradient(to_bottom,white_50%,transparent_100%)]">
                 <Image
-                  src={HeroImage}
+                  src="/images/hero-image.png"
                   alt="Hero"
-                  className="h-fit md:h-[55vh] w-full object-cover"
+                  width={300}
+                  height={550}
+                  className="h-[55vh] w-auto object-cover"
                 />
               </div>
             </div>

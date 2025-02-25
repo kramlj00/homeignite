@@ -28,7 +28,7 @@ const RenovationTimeline = () => {
           />
         </div>
       ))}
-      <div className="my-24 w-full flex justify-center">
+      <div className="mt-24 w-full flex justify-center">
         <Button variant={BUTTON_VARIANT.PRIMARY}>Book free consultation</Button>
       </div>
     </div>

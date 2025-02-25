@@ -11,6 +11,7 @@ interface IProps {
   size?: BUTTON_SIZE;
   className?: string;
   onClick?: () => void;
+  disabled?: boolean;
 }
 
 const Button = ({
@@ -19,13 +20,15 @@ const Button = ({
   children,
   className,
   onClick,
+  disabled,
 }: IProps) => {
   return (
     <button
       className={twMerge(
-        "relative px-8 h-12 sm:px-12 sm:h-[60px] text-white font-semibold tracking-wider text-sm uppercase transition-transform hover:translate-y-[-2px] clip-path-custom",
+        "relative px-8 h-12 sm:px-12 sm:h-[60px] text-white font-semibold tracking-wider text-sm uppercase transition-transform hover:translate-y-[-2px] clip-path-custom transition-all duration-300",
         BUTTON_VARIANT_CLASSNAME[variant],
         BUTTON_SIZE_CLASSNAME[size],
+        disabled && "opacity-50 cursor-not-allowed",
         className
       )}
       style={
@@ -37,6 +40,7 @@ const Button = ({
           : {}
       }
       onClick={onClick}
+      disabled={disabled}
     >
       {children}
     </button>
