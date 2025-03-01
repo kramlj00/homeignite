@@ -61,12 +61,7 @@ export const Experience = () => {
           </div>
         </div>
 
-        <div
-          data-aos="fade-left"
-          data-aos-once="true"
-          data-aos-delay="300"
-          className="relative w-full sm:min-w-[525px] w-full"
-        >
+        <div className="relative w-full sm:min-w-[525px] w-full">
           <div className="relative h-[720px] rounded-lg overflow-hidden">
             <Image
               src={Construction}

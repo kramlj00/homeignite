@@ -6,7 +6,7 @@ import Button from "@/components/button/button";
 
 const RenovationTimeline = () => {
   return (
-    <div className="max-w-5xl mx-auto px-4 py-12 relative">
+    <div className="max-w-5xl mx-auto px-4 py-12 relative overflow-hidden">
       <h1
         data-aos="fade-up"
         data-aos-once="true"

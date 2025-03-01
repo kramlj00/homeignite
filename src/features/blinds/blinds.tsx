@@ -4,7 +4,7 @@ import ContactUsButton from "@/components/button/contact-us-button";
 
 const Blinds = () => {
   return (
-    <div className="px-6 md:px-20 w-full py-12 px-4 flex flex-col gap-10">
+    <div className="px-6 md:px-20 w-full py-12 px-4 flex flex-col gap-10 overflow-hidden">
       <div className="flex flex-col gap-2">
         <h1
           data-aos="fade-up"

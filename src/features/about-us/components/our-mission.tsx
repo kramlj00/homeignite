@@ -2,6 +2,25 @@ import { Home } from "lucide-react";
 import Image from "next/image";
 import Palette from "@/assets/images/palette.png";
 import BuildingHouse from "@/assets/images/building.png";
+import { twMerge } from "tailwind-merge";
+
+const OUR_MISSIONS = [
+  {
+    title:
+      "We aim to revitalize homes by creating spaces that reflect the unique stories of those who live in them. Through thoughtful design and practical solutions, we turn ordinary houses into warm, memorable homes",
+    isActive: true,
+  },
+  {
+    title:
+      "Our mission is to combine modern design with inviting comfort, ensuring each renovation balances contemporary style with the cozy atmosphere that makes a house feel like home",
+    isActive: false,
+  },
+  {
+    title:
+      "We work closely with clients to bring their dream homes to life. With care and attention to detail, we transform visions into reality",
+    isActive: false,
+  },
+];
 
 const OurMission = () => {
   return (
@@ -42,12 +61,7 @@ const OurMission = () => {
           </div>
         </div>
 
-        <div
-          data-aos="fade-left"
-          data-aos-once="true"
-          data-aos-delay="200"
-          className="order-1 lg:order-2 space-y-6"
-        >
+        <div className="order-1 lg:order-2 space-y-6">
           <div className="space-y-2">
             <div className="flex items-center gap-2 text-blue500 font-gotham-medium">
               <Home className="h-5 w-5" />
@@ -69,28 +83,20 @@ const OurMission = () => {
           <div className="space-y-4">
             <h3 className="text-xl font-gotham-medium">Our Missions :</h3>
             <div className="space-y-4">
-              <div className="bg-orange500 text-white rounded-lg p-6">
-                <p>
-                  We aim to revitalize homes by creating spaces that reflect the
-                  unique stories of those who live in them. Through thoughtful
-                  design and practical solutions, we turn ordinary houses into
-                  warm, memorable homes
-                </p>
-              </div>
-              <div className="bg-blue500 text-white rounded-lg p-6">
-                <p>
-                  Our mission is to combine modern design with inviting comfort,
-                  ensuring each renovation balances contemporary style with the
-                  cozy atmosphere that makes a house feel like home
-                </p>
-              </div>
-              <div className="bg-blue500 text-white rounded-lg p-6">
-                <p>
-                  We work closely with clients to bring their dream homes to
-                  life. With care and attention to detail, we transform visions
-                  into reality
-                </p>
-              </div>
+              {OUR_MISSIONS.map((mission, index) => (
+                <div
+                  key={index}
+                  data-aos="fade-up"
+                  data-aos-once="true"
+                  data-aos-delay="200"
+                  className={twMerge(
+                    "bg-blue500 text-white rounded-lg p-6",
+                    mission.isActive && "bg-orange500"
+                  )}
+                >
+                  <p>{mission.title}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>

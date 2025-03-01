@@ -22,14 +22,15 @@ const Hero = () => {
           <Swiper />
         </div>
 
-        <div className="relative lg:h-screen w-full">
+        <div className="relative lg:h-screen w-full overflow-hidden">
           <div className="absolute top-56 left-4 lg:left-auto lg:top-auto lg:bottom-[40vh] lg:right-[35vw]">
-            <RectangleCard className="z-50 m-auto sm:w-full w-32">
-              <div
-                className="flex flex-col gap-1"
-                data-aos="fade-right"
-                data-aos-once="true"
-              >
+            <RectangleCard
+              dataAos="fade-right"
+              dataAosOnce="true"
+              dataAosDelay="200"
+              className="z-50 m-auto sm:w-full w-32"
+            >
+              <div className="flex flex-col gap-1">
                 <Image src={RectangleImage1} alt="Hero" />
                 <p className="hidden md:block text-sm text-blue500 uppercase">
                   Kitchen renovation
@@ -39,12 +40,13 @@ const Hero = () => {
           </div>
 
           <div className="absolute top-[300px] md:top-auto md:bottom-44 right-8">
-            <RectangleCard className="z-50 sm:w-full w-32">
-              <div
-                data-aos="fade-left"
-                data-aos-once="true"
-                className="flex flex-col gap-1"
-              >
+            <RectangleCard
+              dataAos="fade-left"
+              dataAosOnce="true"
+              dataAosDelay="200"
+              className="z-50 sm:w-full w-32"
+            >
+              <div className="flex flex-col gap-1">
                 <Image src={RectangleImage2} alt="Hero" />
                 <p className="hidden md:block text-sm text-blue500 uppercase">
                   Full house renovation
