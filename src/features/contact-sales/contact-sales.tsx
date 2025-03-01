@@ -1,5 +1,4 @@
 import Image from "next/image";
-import PricingHeaderImage from "@/assets/images/pricing-header.png";
 import PlansAndPricing from "./components/plans-and-pricing";
 
 const ContactSales = () => {
@@ -7,7 +6,7 @@ const ContactSales = () => {
     <section className="relative min-h-screen">
       <div className="absolute inset-0 w-full">
         <Image
-          src={PricingHeaderImage}
+          src="/images/pricing-header.png"
           alt="Modern interior living space with wooden furniture and minimalist design"
           fill
           priority
