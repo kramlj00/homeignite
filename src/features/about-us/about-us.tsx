@@ -3,6 +3,7 @@ import { Experience } from "./components/experience/experience";
 import OurMission from "./components/our-mission";
 import OurTeam from "./components/our-team";
 import { ServicesFAQs } from "./components/faqs";
+import BookMeeting from "../book-meeting";
 
 const AboutUs = () => {
   return (
@@ -12,6 +13,7 @@ const AboutUs = () => {
       <OurTeam />
       <Experience />
       <ServicesFAQs />
+      <BookMeeting />
     </div>
   );
 };
