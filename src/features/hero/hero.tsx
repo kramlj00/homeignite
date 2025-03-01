@@ -17,8 +17,8 @@ const Hero = () => {
           className="object-cover w-full"
         />
       </div>
-      <div className="flex w-full justify-between gap-4 lg:flex-row flex-col-reverse">
-        <div className="lg:mb-0 mb-16 relative m-auto flex h-full max-w-[1700px] flex-col justify-between p-4 pb-20 lg:h-[700px] lg:flex-row lg:items-center lg:gap-10 lg:p-0 lg:py-[12.5px] lg:pl-[90px]">
+      <div className="max-w-[2000px] mx-auto flex w-full justify-between gap-4 lg:flex-row flex-col-reverse">
+        <div className="lg:mb-0 mb-16 relative lg:mt-[20vh] flex h-full p-4 pb-20 lg:h-[700px] lg:p-0 lg:pl-[90px]">
           <Swiper />
         </div>
 
