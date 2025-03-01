@@ -15,9 +15,20 @@ const BookMeeting = () => {
       id="book-meeting"
     >
       <div className="space-y-8 mb-16">
-        <h1 className="text-center text-5xl md:text-6xl">Talk to an expert</h1>
+        <h1
+          data-aos="fade-up"
+          data-aos-once="true"
+          className="text-center text-5xl md:text-6xl"
+        >
+          Talk to an expert
+        </h1>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 m-auto border border-gray-200 rounded-xl">
+      <div
+        data-aos="fade-down-left"
+        data-aos-once="true"
+        data-aos-delay="200"
+        className="grid grid-cols-1 md:grid-cols-2 m-auto border border-gray-200 rounded-xl"
+      >
         <div className="w-full max-w-[480px] p-8 space-y-6 border-r border-gray-200">
           <div className="space-y-2">
             <h2 className="text-sm font-gotham-bold text-gray-500">

@@ -10,7 +10,11 @@ const Services = () => {
 
   return (
     <div className="px-6 md:px-20 w-full py-16 px-4 flex flex-col gap-16">
-      <h1 className="text-5xl md:text-6xl font-light">
+      <h1
+        data-aos="fade-up"
+        data-aos-once="true"
+        className="text-5xl md:text-6xl font-light"
+      >
         Beyond Homes:{" "}
         <span className="text-orange400">
           Designing <br /> Everything
@@ -18,7 +22,11 @@ const Services = () => {
       </h1>
       <div className="w-full max-w-[1700px] mx-auto">
         <ServicesMobile />
-        <div className="md:flex items-center justify-center w-full h-[540px] gap-2 hidden">
+        <div
+          data-aos="fade-down"
+          data-aos-once="true"
+          className="md:flex items-center justify-center w-full h-[540px] gap-2 hidden"
+        >
           {SERVICES.map((service, index) => (
             <div
               key={service.id}

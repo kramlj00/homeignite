@@ -40,7 +40,12 @@ const OurMission = () => {
               <Home className="h-5 w-5" />
               <span className="text-sm uppercase tracking-wide">About Us</span>
             </div>
-            <h1 className="text-4xl tracking-wider lg:text-5xl w-[300px] !leading-[60px]">
+            <h1
+              data-aos="fade-up"
+              data-aos-once="true"
+              data-aos-delay="200"
+              className="text-4xl tracking-wider lg:text-5xl w-[300px] !leading-[60px]"
+            >
               Reigniting Homes, Revitalizing Lives
             </h1>
             <h2 className="text-2xl text-muted-foreground">

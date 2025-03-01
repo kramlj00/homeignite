@@ -3,6 +3,7 @@ import "./globals.css";
 import MainNavigation from "@/components/main-navigation";
 import Footer from "@/components/footer";
 import metadataConfig from "@/lib/metadata";
+import { AOSInit } from "../../aos";
 
 const gotham = localFont({
   src: "./fonts/gotham-book.woff",
@@ -37,6 +38,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <AOSInit />
       <body
         className={`${gotham.variable} ${gothamBold.variable} ${gothamMedium.variable} ${gothamLight.variable} antialiased relative`}
       >
