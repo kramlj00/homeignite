@@ -1,8 +1,10 @@
+"use client";
 import Image from "next/image";
 
 import ModernHomeImage from "@/assets/images/modern-home.jpg";
 import Button from "@/components/button";
 import { BUTTON_VARIANT } from "@/components/button/button-variants.const";
+import Link from "next/link";
 
 export const AboutUsHeader = () => {
   return (
@@ -35,7 +37,19 @@ export const AboutUsHeader = () => {
           fall in love with your home all over again
         </p>
 
-        <Button variant={BUTTON_VARIANT.PRIMARY}>BOOK A CALL</Button>
+        <Link
+          href="#book-meeting"
+          scroll={false}
+          onClick={(e) => {
+            e.preventDefault();
+            document.getElementById("book-meeting")?.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }}
+        >
+          <Button variant={BUTTON_VARIANT.PRIMARY}>BOOK A CALL</Button>
+        </Link>
       </div>
     </section>
   );

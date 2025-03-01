@@ -10,7 +10,10 @@ const BookMeeting = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   return (
-    <section className="max-w-5xl mx-auto px-4 py-12 relative">
+    <section
+      className="max-w-5xl mx-auto px-4 py-12 relative"
+      id="book-meeting"
+    >
       <div className="space-y-8 mb-16">
         <h1 className="text-center text-5xl md:text-6xl">Talk to an expert</h1>
       </div>
