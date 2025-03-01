@@ -4,12 +4,30 @@ import ContactUsButton from "@/components/button/contact-us-button";
 
 const Blinds = () => {
   return (
-    <div className="px-6 md:px-20 w-full py-12 px-4 flex flex-col gap-10">
-      <div>
-        <h1 className="text-4xl font-medium">Blind Boutique</h1>
-        <p className="text-xl">Discover the Perfect Blinds for Every Space</p>
+    <div className="px-6 md:px-20 w-full py-12 px-4 flex flex-col gap-10 overflow-hidden">
+      <div className="flex flex-col gap-2">
+        <h1
+          data-aos="fade-up"
+          data-aos-once="true"
+          className="text-4xl font-medium"
+        >
+          Blind Boutique
+        </h1>
+        <p
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-delay="200"
+          className="text-xl"
+        >
+          Discover the Perfect Blinds for Every Space
+        </p>
       </div>
-      <div className="flex overflow-scroll gap-4">
+      <div
+        data-aos="fade-down"
+        data-aos-once="true"
+        data-aos-delay="600"
+        className="flex overflow-scroll gap-4"
+      >
         {BLINDS.map((blind) => (
           <div
             key={blind.title}
@@ -30,10 +48,18 @@ const Blinds = () => {
           </div>
         ))}
       </div>
-      <div className="flex justify-center">
+      <div
+        data-aos="fade-left"
+        data-aos-once="true"
+        className="flex justify-center"
+      >
         <ContactUsButton />
       </div>
-      <p className="text-5xl md:text-6xl text-center">
+      <p
+        data-aos="fade-up"
+        data-aos-once="true"
+        className="text-5xl md:text-6xl text-center"
+      >
         Your Vision, Our Craft” Custom <br /> Designing
       </p>
     </div>

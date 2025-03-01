@@ -16,13 +16,22 @@ const ServicesFAQs = () => {
             Frequently Asked Questions
           </span>
         </div>
-        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-6xl flex flex-col gap-2">
+        <h2
+          data-aos="fade-up"
+          data-aos-once="true"
+          className="text-3xl font-bold tracking-tight sm:text-4xl md:text-6xl flex flex-col gap-2"
+        >
           <span>Everything You Need to Know</span>
           <span>About Our Services and Solutions</span>
         </h2>
       </div>
       <div className="grid grid-cols-1 xl:grid-cols-5 gap-6 xl:gap-14">
-        <div className="relative xl:col-span-2 h-[320px] overflow-hidden rounded-lg">
+        <div
+          data-aos="fade-right"
+          data-aos-once="true"
+          data-aos-delay="300"
+          className="relative xl:col-span-2 h-[320px] overflow-hidden rounded-lg"
+        >
           <Image
             src={SinkImage}
             alt="Sink"

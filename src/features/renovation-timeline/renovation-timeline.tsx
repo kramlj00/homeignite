@@ -6,11 +6,20 @@ import Button from "@/components/button/button";
 
 const RenovationTimeline = () => {
   return (
-    <div className="max-w-5xl mx-auto px-4 py-12 relative">
-      <h1 className="text-5xl md:text-6xl font-light text-center">
+    <div className="max-w-5xl mx-auto px-4 py-12 relative overflow-hidden">
+      <h1
+        data-aos="fade-up"
+        data-aos-once="true"
+        className="text-5xl md:text-6xl font-light text-center"
+      >
         Why choose Homeignite?
       </h1>
-      <p className="text-center text-muted-foreground my-12 max-w-[470px] mx-auto">
+      <p
+        data-aos="fade-up"
+        data-aos-once="true"
+        data-aos-delay="200"
+        className="text-center text-muted-foreground my-12 max-w-[470px] mx-auto"
+      >
         No need to worry - our structured process has been designed to complete
         projects on time and on budget
       </p>
@@ -28,7 +37,11 @@ const RenovationTimeline = () => {
           />
         </div>
       ))}
-      <div className="mt-24 w-full flex justify-center">
+      <div
+        data-aos="fade-left"
+        data-aos-once="true"
+        className="mt-24 w-full flex justify-center"
+      >
         <Button variant={BUTTON_VARIANT.PRIMARY}>Book free consultation</Button>
       </div>
     </div>

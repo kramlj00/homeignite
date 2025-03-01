@@ -12,7 +12,12 @@ const FaqsSwiper = () => {
   const [progress, setProgress] = useState(100 / SERVICES_FAQS.length);
 
   return (
-    <div className="hidden xl:flex gap-8 col-span-3">
+    <div
+      data-aos="fade-left"
+      data-aos-once="true"
+      data-aos-delay="300"
+      className="hidden xl:flex gap-8 col-span-3"
+    >
       <Swiper
         direction="vertical"
         slidesPerView={1.4}

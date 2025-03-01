@@ -17,7 +17,12 @@ const PricingPlans = () => {
       <div className="mx-auto max-w-6xl">
         <div className="relative mt-24">
           <div className="hidden lg:block absolute inset-x-0 -top-8 bottom-0 bg-white/50 backdrop-blur-md rounded-3xl" />
-          <div className="relative grid gap-6 lg:grid-cols-3 px-4">
+          <div
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-delay="600"
+            className="relative grid gap-6 lg:grid-cols-3 px-4"
+          >
             {PRICING_PLANS.map((plan) => (
               <div
                 key={plan.name}

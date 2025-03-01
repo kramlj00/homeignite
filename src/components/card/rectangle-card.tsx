@@ -4,9 +4,19 @@ interface IProps {
   children: React.ReactNode;
   className?: string;
   clipPath?: string;
+  dataAos?: string;
+  dataAosOnce?: string;
+  dataAosDelay?: string;
 }
 
-const RectangleCard = ({ children, className, clipPath }: IProps) => {
+const RectangleCard = ({
+  children,
+  className,
+  clipPath,
+  dataAos,
+  dataAosOnce,
+  dataAosDelay,
+}: IProps) => {
   return (
     <div
       className={twMerge(
@@ -18,6 +28,9 @@ const RectangleCard = ({ children, className, clipPath }: IProps) => {
           clipPath ||
           "polygon(20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 20px)",
       }}
+      data-aos={dataAos}
+      data-aos-once={dataAosOnce}
+      data-aos-delay={dataAosDelay}
     >
       {children}
     </div>

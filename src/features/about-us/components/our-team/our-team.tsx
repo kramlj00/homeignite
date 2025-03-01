@@ -11,13 +11,22 @@ const OurTeam = () => {
           <Home className="h-5 w-5" />
           <span className="text-sm uppercase tracking-wide">Meet Our Team</span>
         </div>
-        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-6xl flex flex-col gap-2">
+        <h2
+          data-aos="fade-up"
+          data-aos-once="true"
+          className="text-3xl font-bold tracking-tight sm:text-4xl md:text-6xl flex flex-col gap-2"
+        >
           <span>Get to Know Our Team of</span>
           <span>Home Building Experts</span>
         </h2>
       </div>
 
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <div
+        data-aos="fade-down"
+        data-aos-once="true"
+        data-aos-delay="400"
+        className="grid gap-8 md:grid-cols-2 lg:grid-cols-3"
+      >
         {TEAM_MEMBERS.map((member, index) => (
           <div
             key={index}
