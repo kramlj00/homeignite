@@ -24,7 +24,7 @@ const BookMeeting = () => {
         </h1>
       </div>
       <div
-        data-aos="fade-down-left"
+        data-aos="fade-up"
         data-aos-once="true"
         data-aos-delay="200"
         className="grid grid-cols-1 md:grid-cols-2 m-auto border border-gray-200 rounded-xl"

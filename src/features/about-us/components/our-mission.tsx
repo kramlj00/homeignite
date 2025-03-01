@@ -8,14 +8,22 @@ const OurMission = () => {
     <section className="container mx-auto px-4 pt-4 relative">
       <div className="grid gap-8 lg:grid-cols-2 lg:flex-row-reverse">
         <div className="order-2 lg:order-1 space-y-6 md:w-[486px] mx-auto">
-          <div className="relative rounded-lg overflow-hidden h-[364px] m-auto">
+          <div
+            data-aos="fade-right"
+            data-aos-once="true"
+            className="relative rounded-lg overflow-hidden h-[364px] m-auto"
+          >
             <Image
               src={BuildingHouse}
               alt="Construction site showing houses under renovation"
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="bg-muted rounded-lg relative">
+          <div
+            data-aos="fade-right"
+            data-aos-once="true"
+            className="bg-muted rounded-lg relative"
+          >
             <div className="flex flex-col gap-6 items-center justify-between mb-4 absolute z-10 text-white top-10 left-10">
               <h3 className="text-4xl font-gotham-medium">4.8/5</h3>
               <p className="font-gotham-medium">
@@ -34,7 +42,12 @@ const OurMission = () => {
           </div>
         </div>
 
-        <div className="order-1 lg:order-2 space-y-6">
+        <div
+          data-aos="fade-left"
+          data-aos-once="true"
+          data-aos-delay="200"
+          className="order-1 lg:order-2 space-y-6"
+        >
           <div className="space-y-2">
             <div className="flex items-center gap-2 text-blue500 font-gotham-medium">
               <Home className="h-5 w-5" />
@@ -43,7 +56,7 @@ const OurMission = () => {
             <h1
               data-aos="fade-up"
               data-aos-once="true"
-              data-aos-delay="200"
+              data-aos-delay="600"
               className="text-4xl tracking-wider lg:text-5xl w-[300px] !leading-[60px]"
             >
               Reigniting Homes, Revitalizing Lives

@@ -16,11 +16,20 @@ export const Experience = () => {
                 Expertise and Experience
               </span>
             </div>
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-6xl flex flex-col gap-2">
+            <h2
+              data-aos="fade-up"
+              data-aos-once="true"
+              className="text-3xl font-bold tracking-tight sm:text-4xl md:text-6xl flex flex-col gap-2"
+            >
               <span>Bringing Expertise</span>
               <span>to Every Project</span>
             </h2>
-            <p className="text-muted-foreground text-lg">
+            <p
+              data-aos="fade-up"
+              data-aos-once="true"
+              data-aos-delay="200"
+              className="text-muted-foreground text-lg"
+            >
               At HomeIgnite, we take pride in our deep industry knowledge and
               extensive experience, honed over years of transforming homes. Our
               team is dedicated to delivering superior craftsmanship, blending
@@ -32,6 +41,9 @@ export const Experience = () => {
           <div className="grid sm:grid-cols-2 gap-4">
             {EXPERIENCE.map((item, index) => (
               <div
+                data-aos="fade-right"
+                data-aos-once="true"
+                data-aos-delay="300"
                 key={index}
                 className={twMerge(
                   "p-6 transition-colors rounded-lg text-white",
@@ -49,7 +61,12 @@ export const Experience = () => {
           </div>
         </div>
 
-        <div className="relative w-full sm:min-w-[525px] w-full">
+        <div
+          data-aos="fade-left"
+          data-aos-once="true"
+          data-aos-delay="300"
+          className="relative w-full sm:min-w-[525px] w-full"
+        >
           <div className="relative h-[720px] rounded-lg overflow-hidden">
             <Image
               src={Construction}
