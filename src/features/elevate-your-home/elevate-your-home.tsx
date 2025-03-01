@@ -11,7 +11,7 @@ const images = [home1, home2, home3, home4, home5];
 
 const ElevateYourHome = () => {
   return (
-    <div className="w-full pt-24 p-12 px-4 overflow-hidden">
+    <div className="content-wrapper pt-24 p-12 overflow-hidden">
       <h1
         data-aos="fade-up"
         data-aos-once="true"

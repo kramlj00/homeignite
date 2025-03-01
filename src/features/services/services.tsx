@@ -9,7 +9,7 @@ const Services = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   return (
-    <div className="px-6 md:px-20 w-full py-16 px-4 flex flex-col gap-16">
+    <div className="content-wrapper md:px-20 flex flex-col gap-16">
       <h1
         data-aos="fade-up"
         data-aos-once="true"
