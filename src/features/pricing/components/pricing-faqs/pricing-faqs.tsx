@@ -39,14 +39,30 @@ const PricingFAQs = () => {
           <div className="font-gotham-medium inline-block rounded-lg bg-orange500 px-3 py-1 text-md text-white">
             FAQs
           </div>
-          <h2 className="text-3xl font-gotham-bold tracking-tight sm:text-4xl">
+          <h2
+            data-aos="fade-up"
+            data-aos-once="true"
+            className="text-3xl font-gotham-bold tracking-tight sm:text-4xl"
+          >
             FAQs About Pricing
           </h2>
-          <p className="text-zinc-800">
+          <p
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-delay="300"
+            className="text-zinc-800"
+          >
             Here are some frequently asked questions (FAQ) about pricing
           </p>
         </div>
-        <Accordion type="single" collapsible className="w-full">
+        <Accordion
+          data-aos="fade-right"
+          data-aos-once="true"
+          data-aos-delay="700"
+          type="single"
+          collapsible
+          className="w-full"
+        >
           <div className="grid gap-4 md:grid-cols-2">
             <div className="space-y-4">
               {PRICING_FAQS.slice(0, 3).map((faq) => (

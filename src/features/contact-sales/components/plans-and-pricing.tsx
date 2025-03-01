@@ -14,8 +14,14 @@ const PlansAndPricing = () => {
       <div className="mx-auto max-w-6xl relative my-48 bg-white/50 backdrop-blur-md rounded-3xl p-4 sm:p-8 md:p-12 grid lg:grid-cols-2 gap-10">
         <div className="max-w-xl space-y-6 pt-6">
           <div className="space-y-2">
-            <p>15-Min Video Meeting</p>
-            <h1 className="text-4xl text-white md:text-5xl font-gotham-medium flex flex-col gap-2">
+            <p data-aos="fade-up" data-aos-once="true" data-aos-delay="200">
+              15-Min Video Meeting
+            </p>
+            <h1
+              data-aos="fade-up"
+              data-aos-once="true"
+              className="text-4xl text-white md:text-5xl font-gotham-medium flex flex-col gap-2"
+            >
               <div>
                 <span className="text-blue500">Membership</span> Plans
               </div>
@@ -24,7 +30,12 @@ const PlansAndPricing = () => {
               </div>
             </h1>
           </div>
-          <div className="space-y-4 text-white font-gotham-medium">
+          <div
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-delay="400"
+            className="space-y-4 text-white font-gotham-medium"
+          >
             <p>
               We&apos;ll Help You Find The Best Fit For Your Business Needs And
               Tell You How To Unlock Additional Job Discounts, Dedicated

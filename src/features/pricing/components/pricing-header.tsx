@@ -16,10 +16,19 @@ const PricingHeader = () => {
       </div>
 
       <div className="relative mt-[140px] md:ml-[140px] flex flex-col gap-10 text-white z-10">
-        <h1 className="text-4xl font-gotham-medium text-center md:text-left">
+        <h1
+          data-aos="fade-up"
+          data-aos-once="true"
+          className="text-4xl font-gotham-medium text-center md:text-left"
+        >
           Find Your Perfect Plan
         </h1>
-        <p className="text-lg font-gotham-medium text-center md:text-left">
+        <p
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-delay="300"
+          className="text-lg font-gotham-medium text-center md:text-left"
+        >
           Clearly state the value proposition, e.g., &quot;Affordable Plans for
           <br />
           Every Need.&quot;
