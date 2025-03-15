@@ -11,15 +11,10 @@ const ServicesFaqsMobile = () => {
     <div className="flex flex-col xl:hidden gap-4 w-full">
       {SERVICES_FAQS.map((faq, index) => (
         <button
-          data-aos="fade-up"
-          data-aos-once="true"
-          data-aos-delay={`${index * 100}ms`}
           key={index}
           className={twMerge(
             "w-full h-fit transition-all duration-300 rounded-lg p-8 text-left hover:scale-[1.02] active:scale-[0.98]",
-            activeIndex === index
-              ? "bg-green800 cursor-default hover:scale-100 active:scale-100"
-              : "bg-blue1000"
+            activeIndex === index ? "bg-green800 cursor-default" : "bg-blue1000"
           )}
           onClick={() => setActiveIndex(index)}
         >
